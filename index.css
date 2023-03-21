@@ -1,0 +1,41 @@
+.btn-game {
+	transition: all 0.3s ease;
+}
+
+.btn-game:hover {
+	scale: 1.05;
+}
+
+.modal-reset {
+	background-color: rgba(0, 0, 0, 0.5);
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: none;
+}
+
+.modal-box {
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, -30%);
+	border-radius: 8px;
+	animation: showModal 0.3s;
+
+}
+
+@keyframes showModal {
+	from {
+		top: 0;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	to {
+		top: 30%;
+		left: 50%;
+		transform: translate(-50%, -30%);
+	}
+}
